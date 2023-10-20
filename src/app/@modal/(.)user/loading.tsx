@@ -1,7 +1,12 @@
+import Modal from "@/components/Modal";
 import UserDetailSkeleton from "@/components/UserDetailSkeleton";
 
 function Loading() {
-  return <UserDetailSkeleton />;
+  return (
+    <Modal>
+      <UserDetailSkeleton />
+    </Modal>
+  );
 }
 
 export default Loading;

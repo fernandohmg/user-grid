@@ -26,7 +26,7 @@ export const getUser = React.cache(async (id: number) => {
 
   if (!res.ok) throw new Error(`Failed to fetch user - Error ${res.status}`);
 
-  await new Promise((resolve) => setTimeout(resolve, 500));
+  // await new Promise((resolve) => setTimeout(resolve, 500));
 
   return (await res.json()) as User;
 });

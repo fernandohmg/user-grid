@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ThumbImage from "./ThumbImage";
 
 type Props = {
@@ -14,7 +15,7 @@ type Props = {
 
 function UserCard({ user }: Props) {
   return (
-    <section className="h-[404px] w-full rounded-[20px] bg-white border overflow-clip">
+    <section className="h-[404px] w-full rounded-[20px] bg-white border overflow-clip shadow-md">
       <div className="h-[214px] bg-custom-gradient" />
       <div className="flex flex-col items-center -translate-y-20">
         <header className="flex flex-col items-center ">
@@ -32,12 +33,12 @@ function UserCard({ user }: Props) {
             {user.company.department}
           </p>
         </header>
-        <a
+        <Link
           href={`/user/${user.id}`}
           className="mt-2 rounded border-2 border-black px-3.5 py-0.5"
         >
           Profile
-        </a>
+        </Link>
       </div>
     </section>
   );

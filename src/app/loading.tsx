@@ -1,8 +1,8 @@
-import { range } from "./utils/utils";
+import { range } from "../utils/utils";
 
 function Loading() {
   return (
-    <main className="p-2 grid grid-cols-fluid auto-rows-min gap-4">
+    <main className="p-2 grid grid-cols-fluid auto-rows-min gap-4 max-w-7xl mx-auto">
       {range(15).map((i) => (
         <section
           key={i}

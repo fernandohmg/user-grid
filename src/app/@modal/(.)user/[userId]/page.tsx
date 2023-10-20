@@ -1,3 +1,4 @@
+import Modal from "@/components/Modal";
 import UserDetail from "@/components/UserDetail";
 import { getUser } from "@/utils/getUser";
 import { notFound } from "next/navigation";
@@ -14,7 +15,11 @@ async function fetchUser(userId: number) {
 
 async function UserPage({ params }: Props) {
   const user = await fetchUser(params.userId);
-  return <UserDetail user={user} />;
+  return (
+    <Modal>
+      <UserDetail user={user} />
+    </Modal>
+  );
 }
 
 export default UserPage;
