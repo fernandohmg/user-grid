@@ -21,7 +21,7 @@ export const getUsers = React.cache(async () => {
 
   const usersResponse: UsersResponse = await res.json();
 
-  //   await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 500));
 
   return usersResponse.users;
 });

@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <h1 className="flex items-center justify-center text-2xl h-20">
-          Users
+          <a href="/" aria-label="Home">
+            App sample
+          </a>
         </h1>
         {children}
       </body>

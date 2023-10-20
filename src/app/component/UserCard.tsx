@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import ThumbImage from "./ThumbImage";
 
 type Props = {
   user: {
@@ -19,10 +19,12 @@ function UserCard({ user }: Props) {
       <div className="flex flex-col items-center -translate-y-20">
         <header className="flex flex-col items-center ">
           <div className="p-1 rounded-full bg-custom-gradient border-8 border-white">
-            <img
+            <ThumbImage
               className="w-24 h-24 rounded-full border-white border-4 bg-white"
               src={user.image}
-              alt=""
+              alt="avatar"
+              height={100}
+              width={100}
             />
           </div>
           <h2 className="mt-2.5 text-lg font-medium">{`${user.firstName} ${user.lastName}`}</h2>
@@ -31,10 +33,10 @@ function UserCard({ user }: Props) {
           </p>
         </header>
         <a
-          href="#"
+          href={`/user/${user.id}`}
           className="mt-2 rounded border-2 border-black px-3.5 py-0.5"
         >
-          View Profile
+          Profile
         </a>
       </div>
     </section>

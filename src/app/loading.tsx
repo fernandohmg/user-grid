@@ -10,13 +10,13 @@ function Loading() {
         >
           <div className="h-[214px] bg-gray-200 rounded-t-[20px]"></div>
           <div className="flex flex-col items-center -translate-y-20">
-            <header className="flex flex-col items-center">
+            <div className="flex flex-col items-center">
               <div className="p-1 rounded-full bg-gray-200 border-8 border-white">
                 <div className="w-24 h-24 rounded-full border-white border-4 bg-white"></div>
               </div>
               <div className="mt-2.5 h-4 bg-gray-200 rounded w-1/2"></div>
               <div className="h-4 bg-gray-200 rounded w-2/3"></div>
-            </header>
+            </div>
           </div>
         </section>
       ))}
