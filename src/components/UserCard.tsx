@@ -19,7 +19,7 @@ function UserCard({ user }: Props) {
       <div className="h-[214px] bg-custom-gradient" />
       <div className="flex flex-col items-center -translate-y-20">
         <header className="flex flex-col items-center ">
-          <div className="p-1 rounded-full bg-custom-gradient border-8 border-white">
+          <div className="p-1 rounded-full bg-custom-gradient border-[6px] border-white">
             <ThumbImage
               className="w-24 h-24 rounded-full border-white border-4 bg-white"
               src={user.image}
